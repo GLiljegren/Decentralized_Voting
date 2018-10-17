@@ -20,8 +20,9 @@ To run this locally:
 4. (Optional) Run "truffle test" to make sure all 5 tests in the testcripts returns successfully
 5. Start the local server using "npm run dev" in the "truffle"-directory
 
-The client application will now start on localhost:3000 (make sure you run this in chrome as you will need to use meta mask)
+The client application will now start on localhost:3000 (make sure you run this in chrome as you will need to use meta mask), it should just be a text saying "loading" right now.
 
 6. Create a new metamask account by choosing the "import account"-option and pasting the private key of one of the simulated addresses in Ganache (private keys can be found by clicking the key-symbol in the far right)
-7. Refresh the page, and you should now be able to select a candidate to vote for.
-8. You can import more accounts by repeating step 6 and vote with them as well to see that it affects the result.
+7. In Metamask, switch from "Main Ethereum Network" to a custom network and enter the local port which Ganache is running on, default should be http://localhost:7545
+8. Refresh the page, and you should now be able to select a candidate to vote for.
+9. You can import more accounts by repeating step 6 and vote with them as well to see that it affects the result.

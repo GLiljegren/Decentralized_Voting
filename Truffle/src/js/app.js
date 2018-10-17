@@ -42,8 +42,8 @@ App = {
       // This is a known issue with Metamask
       // https://github.com/MetaMask/metamask-extension/issues/2393
       instance.votedEvent({}, {
-        fromBlock: 'latest',
-        toBlock: 'latest'
+        fromBlock: 'latest'
+       // toBlock: 'latest'
       }).watch(function(error, event) {
         console.log("event triggered", event)
         // Reload when a new vote is recorded
