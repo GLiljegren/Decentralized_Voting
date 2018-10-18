@@ -13,10 +13,10 @@ Limitations:
 
 
 Dependencies:
-    - Node Packet Manager (npm)
-    - Truffle
-    - Ganache
-    - Meta Mask (chrome plugin)
+- Node Packet Manager (npm)
+- Truffle
+- Ganache
+- Meta Mask (chrome plugin)
 
 To run this locally:
 1. Make sure the dependencies are installed
