@@ -23,8 +23,8 @@ contract Election {
 
     // Constructor-function
     function Election () public {
-        addCandidate("Kristersson");
-        addCandidate("Steffeboii");
+        addCandidate("Hillary");
+        addCandidate("Trump");
     }
 
     function addCandidate (string _name) private {
