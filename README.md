@@ -2,10 +2,15 @@
 A decentralized voting app on the ethereum blockchain, using the truffle framework. (Built following tutorials from Dapp University.)
 
 This app consists of a simple voting-client connected to a local ethereum blockchain.
-- A voter can authenticate themselvs using their private key.
+- A voter can authenticate their accounts using their private key in metamask.
 - When a voter votes, the smart contract performs a transaction on the blockchain and adds a vote to the election score.
 - A vote can not be changed afterwards by the voter or anyone else. An attempt to cast a double vote will be rejected by the smart contract. The client-app also removes the voting-form after a vote has been cast.
 - The voter is also "anonymous" in the sense that the only thing connected to the vote which can be found out by a third party is their ethereum wallet-address.
+
+Limitations:
+-  There is in this version nothing stopping a voter from creating several accounts, something that could be fixed by incorporating for example BankID for authentication.
+- This version of the smart contract does not enable a voter to make sure afterwards that their vote has been cast on the correct candidate, however the blockchain is immutable and cannot be altered afterwards, so the only way to cast the vote on somebody else would be to hack the client-application or any other type of attack that is performed before the voter has cast their vote.
+
 
 Dependencies:
     - Node Packet Manager (npm)
